@@ -32,7 +32,7 @@ app.use(expressValidator({
 			return true;
 		},
 		tasksLen: function(tasks) {
-			return tasks.length <11 ? true : false;
+			return tasks.length <31 ? true : false;
 		},
 		title: function(title) {
 			return title.length <21 ? true : false;

@@ -116,7 +116,7 @@ exports.createTasks = function(req, res, next) {
 
     req.checkBody('title', 'Invalid Title.').notEmpty().title();
     req.checkBody('tasks', 'Invalid Tasks. Must be less than 120 characters.').notEmpty().tasks();
-    req.checkBody('tasks', '10 tasks is the max').tasksLen();
+    req.checkBody('tasks', '30 tasks is the max').tasksLen();
 
     var errors = req.validationErrors();
 

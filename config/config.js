@@ -4,7 +4,7 @@ var config = {
 	development:'development',
 	production:'production',
   port: process.env.PORT || 5000,
-  expireTime: 60 *60 *1*24,
+  expireTime: 60 *60 *1*24*30,
 	secrets: {
 		jwt: process.env.JWT || 'trex'
 	}
